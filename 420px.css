@@ -55,11 +55,11 @@
     display: grid;
     place-items: center;
     z-index: 1;
-    padding: 0em 2em 0em 2em;
+    padding: 0em 1em 0em 1em;
   }
 
   .content {
-    background-color: beige;
+    background-color: white;
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
