@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+@media screen and (max-width: 620px) {
+  *,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--Dark-cyan);
+    color: black;
+    font-family: Kumbh Sans, sans-serif;
+  }
+
+  .main {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .img {
+    z-index: -1;
+    height: 30em;
+    position: absolute;
+  }
+
+  .top {
+    top: -12em;
+    left: -12em;
+    transform: rotate(50deg);
+  }
+
+  .btm {
+    right: -12em;
+    bottom: -12em;
+    transform: rotate(50deg);
+  }
+
+  .container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: grid;
+    place-items: center;
+    z-index: 1;
+    padding: 0em 2em 0em 2em;
+  }
+
+  .content {
+    background-color: beige;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  .top-content {
+    height: 100%;
+    width: 100%;
+  }
+
+  .top-content > img {
+    max-height: 100%;
+    max-width: 100%;
+    background-color: contain;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .middle-content {
+    text-align: center;
+  }
+
+  .avatar {
+    margin-top: -4em;
+    height: 7em;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+  .name {
+    margin-bottom: 12px;
+    font-size: 1.39em;
+  }
+
+  :is(.age, .country, .msg) {
+    color: var(--Dark-gray);
+    font-size: 0.9em;
+    font-weight: 400;
+    letter-spacing: 0.9px;
+  }
+
+  :is(.name, .num) {
+    opacity: 85%;
+  }
+
+  .age {
+    margin-left: 5px;
+  }
+
+  .num {
+    font-size: 1.3em;
+    letter-spacing: 1px;
+  }
+
+  .msg {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .country {
+    margin-bottom: 22px;
+  }
+
+  .btm-content {
+    border-top: 0.1px solid var(--Dark-gray);
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .box {
+    margin-top: 8px;
+    text-align: center;
+  }
+}
